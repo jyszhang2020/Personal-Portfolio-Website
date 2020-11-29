@@ -331,3 +331,38 @@ h4 {
     100% { background-position: 0 0; }
 }
   
+/*
+    Resume
+*/
+
+.resume-title .name {
+    text-align: center;
+}
+
+.resume-title .contact {
+    text-align: center;
+}
+
+.resume-category {
+    margin-top: 5%;
+}
+
+.resume-category h1 {
+    color: #6BBAA7;
+}
+
+.resume-content .name {
+    display: inline-block;
+    text-align: center;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    color: #F8A100;
+}
+
+.resume-content .time {
+    display: inline-block;
+    float: right;
+    text-align: center;
+    color: #F8A100;
+}
+

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Yunshu Zhang's Portfolio</title>
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+        <script src="resume.js"></script>
+    </head>
+    <body>
+
+        <section class = "resume-title" id="resume-title"></section>
+
+        <section class = "resume-category" id = "resume-category-education"></section>
+        <section class = "resume-content" id = "resume-content-education"></section>
+
+        <section class = "resume-category" id = "resume-category-skill"></section>
+        <section class = "resume-content" id = "resume-content-skill"></section>
+
+        <section class = "resume-category" id = "resume-category-experience"></section>
+        <section class = "resume-content" id = "resume-content-experience"></section>
+
+        <section class = "resume-category" id = "resume-category-project"></section>
+        <section class = "resume-content" id = "resume-content-project"></section>
+        <!-- <section class="resume" id="featured-resume">
+
+        </section> -->
+        
+    </body>
+    <script>
+        createHeader(resume_header, "#resume-title");
+
+        createCategory(education, "#resume-category-education");
+        createContent(education_info, "#resume-content-education");
+        
+        createCategory(skill, "#resume-category-skill");
+        createContent(skill_info, "#resume-content-skill");
+
+        createCategory(experience, "#resume-category-experience");
+        createContent(experience_info, "#resume-content-experience");
+
+        createCategory(project, "#resume-category-project");
+        createContent(project_info, "#resume-content-project");
+
+    </script>
+</html>
