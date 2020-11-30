@@ -4,22 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yunshu Zhang's Lounge</title>
-    <script src="lounge.js"></script>
     <link rel="stylesheet" type="text/css" href="../style.css"/>
 </head>
 <body>
     <!-- Header and Navigation bar -->
     <header>
         <!-- Section -->
-        <nav class="nav-bar">
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a class="active" href="../project.html">Project</a></li>
-                <li><a href="../about.html">About</a></li>
+        <nav class="nav-bar" aria-labelledby="header">
+            <ul role = "list">
+                <li role = "listitem"><a href="../index.html">Home</a></li>
+                <li role = "listitem"><a class="active" href="../project.html">Project</a></li>
+                <li role = "listitem"><a href="../about.html">About</a></li>
             </ul>
         </nav>
         <!-- Contact information -->
-        <a href="../contact.html"><button>Contact</button></a>
+        <a tabindex="0" href="../contact.html"><button>Contact</button></a>
     </header>
 
     <!-- Title -->
@@ -27,43 +26,43 @@
         Lounge 🛏️
     </div>
     <!-- Project -->
-    <div class = "proj-wrapper">
+    <div class = "proj-wrapper" aria-labelledby = "project">
         <!-- Project image -->
-        <img class = "proj-lounge-art" src="images/activities.png">
-        <img class = "proj-lounge-art" src="images/game.png">
+        <img class = "proj-lounge-art" src="images/activities.png" alt="Activities Screen">
+        <img class = "proj-lounge-art" src="images/game.png" alt="Game Screen">
         <!-- Project text -->
         <div class = "proj-intro-text">
-            <ul>
-                <li>Meetup and have fun with your friends or teammates no matter how busy y’all are!</li>
-                <li>See in real-time when your coworkers are down to socialize, or let your friends know you want to hang out!                    </li>
-                <li>Get fun remote-friendly game and icebreaker recommendations from Lounge                    </li>
+            <ul role = "list">
+                <li role = "listitem">Meetup and have fun with your friends or teammates no matter how busy y’all are!</li>
+                <li role = "listitem">See in real-time when your coworkers are down to socialize, or let your friends know you want to hang out!                    </li>
+                <li role = "listitem">Get fun remote-friendly game and icebreaker recommendations from Lounge                    </li>
             </ul>
         </div>
     </div>
     <!-- 4 panel story -->
-    <div class="panel-wrapper">
+    <div class="panel-wrapper" aria-labelledby="panel">
         <h2>4-Panel Story</h2>
         <!-- 1 panel -->
-        <div class="panel">
-            <img src="images/panel-1.png">
+        <div class="panel" id="panel-1">
+            <img src="images/panel-1.png" alt="Panel 1">
             <h3>Persona</h3>
             <p>Cindy is a new-grad college student working full-time as a software engineer. She is currently staying at home with her parents, because COVID has forced her company to work remotely.</p>
         </div>
         <!-- 2 panel -->
-        <div class="panel">
-            <img src="images/panel-2.png">
+        <div class="panel" id="panel-2">
+            <img src="images/panel-2.png" alt="Panel 2">
             <h3>Problem</h3>
             <p>Because of COVID and remote work, Cindy is having a hard time connecting with her team for non-work related activities. She wants to participate in fun social activities with her coworkers and friends.</p>
         </div>
         <!-- 3 panel -->
-        <div class="panel">
-            <img src="images/lobby.png">
+        <div class="panel" id="panel-3">
+            <img src="images/lobby.png" alt="Panel 3">
             <h3>Payoff</h3>
             <p>As part of her onboarding, she’s added to the company team on Lounge. Cindy uses Lounge to meet new coworkers who are interested in socializing. Once everyone is ready to play, they vote on which remote-friendly activities they can take part in. </p>
         </div>
         <!-- 4 panel -->
-        <div class="panel">
-            <img src="images/panel-4.png">
+        <div class="panel" id="panel-4">
+            <img src="images/panel-4.png" alt="Panel 4">
             <h3>Finish</h3>
             <p>Cindy feels energized and fulfilled after Lounge helped her and her coworkers socialize, get to know each other, and have fun in a casual environment.</p>
         </div>

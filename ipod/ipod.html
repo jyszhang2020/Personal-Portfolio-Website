@@ -10,15 +10,15 @@
     <!-- Header and Navigation bar -->
     <header>
         <!-- Section -->
-        <nav class="nav-bar">
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a class="active" href="../project.html">Project</a></li>
-                <li><a href="../about.html">About</a></li>
+        <nav class="nav-bar" aria-labelledby="header">
+            <ul role = "list">
+                <li role = "listitem"><a href="../index.html">Home</a></li>
+                <li role = "listitem"><a class="active" href="../project.html">Project</a></li>
+                <li role = "listitem"><a href="../about.html">About</a></li>
             </ul>
         </nav>
         <!-- Contact information -->
-        <a href="../contact.html"><button>Contact</button></a>
+        <a tabindex="0" href="../contact.html"><button>Contact</button></a>
     </header>
 
     <!-- Title -->
@@ -26,36 +26,36 @@
         iPod 💽
     </div>
     <!-- Project -->
-    <div class = "proj-wrapper">
+    <div class = "proj-wrapper" aria-labelledby = "project">
         <!-- Project image -->
-        <img class = "proj-ipod-art" src="images/album.png">
-        <img class = "proj-ipod-art" src="images/song.png">
+        <img class = "proj-ipod-art" src="images/album.png" alt="Album">
+        <img class = "proj-ipod-art" src="images/song.png" alt="Song">
         <!-- Project text -->
         <div class = "proj-intro-text">
-            <ul>
-                <li>This is a mobile music player application using HTML, CSS, and Javascript</li>
-                <li>The first screen shows the albums, the second is the list of songs of certain album. Last but not the least, the third screen has implement switch songs and turn volums functions.</li>
+            <ul role = "list">
+                <li role = "listitem">This is a mobile music player application using HTML, CSS, and Javascript</li>
+                <li role = "listitem">The first screen shows the albums, the second is the list of songs of certain album. Last but not the least, the third screen has implement switch songs and turn volums functions.</li>
             </ul>
         </div>
     </div>
     <!-- 4 panel story -->
-    <div class="feature-wrapper">
+    <div class="feature-wrapper" aria-labelledby="panel">
         <h2>Features of iPod</h2>
         <!-- 1 panel -->
-        <div class="feature">
-            <img src="images/play.png">
+        <div class="feature" id="feature-1">
+            <img src="images/play.png" alt="Play/Pause">
             <h3>Play/Pause Mode</h3>
             <p>Users could click Play/Pause mode to start and stop playing songs.</p>
         </div>
         <!-- 2 panel -->
-        <div class="feature">
-            <img src="images/volum.png">
+        <div class="feature" id="feature-2">
+            <img src="images/volum.png" alt="Volum Down and Up">
             <h3>Volums</h3>
             <p>The plus and minus button could change the volums of the player.</p>
         </div>
         <!-- 3 panel -->
-        <div class="feature">
-            <img src="images/previous.png">
+        <div class="feature" id="feature-3">
+            <img src="images/previous.png" alt="Presiou/Next">
             <h3>Previous/Next Song</h3>
             <p>Users could change to the previous and next songs.</p>
         </div>
