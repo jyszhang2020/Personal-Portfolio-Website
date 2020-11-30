@@ -1,36 +1,3 @@
-// var resume = [
-//     {
-//       title: "Pedagogy of the Oppressed",
-//       author: "Paulo Freire",
-//       year: 1968,
-//       publisher: "Bloomsbury Publishing",
-//       pages: 192,
-//       ebook:false,
-//       cover: "https://images-na.ssl-images-amazon.com/images/I/41OtPGPAMuL._SX333_BO1,204,203,200_.jpg"
-    
-//     },
-//     {
-//       title: "Stamped from the Beginning",
-//       author: "Ibram X. Kendi",
-//       year: 2016,
-//       publisher: "Public Affairs",
-//       pages: 594,
-//       ebook:false,
-//       cover: "https://images-na.ssl-images-amazon.com/images/I/51ZYfODpfXL._SX331_BO1,204,203,200_.jpg"
-    
-//     },
-//     {
-//       title: "The New Jim Crow",
-//       author: "Michelle Alexander",
-//       year: 2020,
-//       publisher: "New Press",
-//       pages: 377,
-//       ebook:false,
-//       cover: "https://www.akpress.org/pub/media/catalog/product/cache/1ec012b46cbfe4262fc94f3e95ab2d9c/n/e/newjip.jpg"
-    
-//     },
-// ];
-
 var resume_header = [
   {
     name: "Yunshu (Joyce) Zhang",
@@ -267,7 +234,6 @@ function createCategory(name, resumeSelector) {
   let container = document.createElement("div");
   container.className="resume-category";
   container.innerHTML = html;
-  //container.tabIndex = resume_header.indexOf(resume);
   category_name.append(container);
 }
 
@@ -286,7 +252,6 @@ function createContent(content, resumeSelector) {
         var container = document.createElement("div");
         container.className="resume-content";
         container.innerHTML = html1;
-        // container.tabIndex = resume_header.indexOf(resume);
         resume_info.append(container);
 
         // add info
@@ -313,37 +278,3 @@ function createContent(content, resumeSelector) {
     }
   }
 }
-
-
-
-
-    
-function createResumeTest(resume, resumeSelector){
-    let resume_info = document.querySelector(resumeSelector);
-    if (resume_info){
-        if(resume instanceof Array){
-            for (let book of resume){
-              // You will add your content here for
-              // let html = 
-              let html = `
-                  <div>
-                      <h1 class="title">${book.title}</h1>
-                      <h2 class="author">${book.author}</h2>
-                      <img class="cover" src="${book.cover}" alt="Cover Art">
-                      <div class="book-info">
-                      <span class="publisher">&copy; ${book.publisher}</span>,
-                      <span class="pages">${book.pages} pages </span>
-                  </div>
-              `
-              let container = document.createElement("div");
-              container.className="book";
-              container.innerHTML = html;
-              container.tabIndex = resume.indexOf(book);
-              resume_info.append(container);
-            }
-        }
-
-    }
-
-}
-    

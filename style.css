@@ -366,3 +366,7 @@ h4 {
     color: #F8A100;
 }
 
+::placeholder {
+    color: #B6A19E;
+}
+

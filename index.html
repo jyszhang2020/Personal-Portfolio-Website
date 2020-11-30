@@ -10,11 +10,11 @@
     <!-- Header and Navigation bar -->
     <header>
         <!-- Section -->
-        <nav class="nav-bar">
-            <ul>
-                <li><a class="active" href="index.html" >Home</a></li>
-                <li><a href="project.html">Project</a></li>
-                <li><a href="about.html">About</a></li>
+        <nav class="nav-bar" aria-labelledby="header">
+            <ul role = "list">
+                <li role = "listitem"><a class="active" href="index.html" >Home</a></li>
+                <li role = "listitem"><a href="project.html">Project</a></li>
+                <li role = "listitem"><a href="about.html">About</a></li>
             </ul>
         </nav>
         <!-- Contact information -->
@@ -35,24 +35,24 @@
     <!-- Two project -->
     <div>
         <!-- Project 1 -->
-        <div class = "proj-wrapper">
+        <div class = "proj-wrapper" aria-labelledby = "project">
             <!-- Project image -->
-            <a href="ipod/ipod.html"><img tabindex="0" class = "proj-art" src="images/currents.jpg" alt="Currents Album"></a>
+            <a href="ipod/ipod.html"><img tabindex="0" class = "proj-art" src="ipod/images/currents.jpg" alt="Project 1 Currents Album"></a>
             <!-- Project text -->
-            <div class = "proj-text">
-                <a class = "proj-name" href="ipod/ipod.html">iPod 💽</a>
-                <p class = "proj-info"> This is a mobile music player application using HTML, CSS, and Javascript</p>
-                <p class = "proj-info"> The first screen shows the albums, the second is the list of songs of certain album. Last but not the least, the third screen has implement switch songs and turn volums functions.</p>
+            <div class = "proj-text" aria-labelledby = "project1">
+                <a class = "proj-name" href="ipod/ipod.html" id = "project1">iPod 💽</a>
+                <p class = "proj-info" id = "project1"> This is a mobile music player application using HTML, CSS, and Javascript</p>
+                <p class = "proj-info" id = "project1"> The first screen shows the albums, the second is the list of songs of certain album. Last but not the least, the third screen has implement switch songs and turn volums functions.</p>
             </div>
         </div>
         <!-- Project 2 -->
         <div class = "proj-wrapper">
             <!-- Project image -->
-            <a href="lounge/lounge.html"><img tabindex="0" class = "proj-art" src="lounge/images/activities.png" alt="Currents Album"></a>
+            <a href="lounge/lounge.html"><img tabindex="0" class = "proj-art" src="lounge/images/activities.png" alt="Project 2 Activities Screen"></a>
             <!-- Project text -->
-            <div class = "proj-text">
-                <a href="lounge/lounge.html" class = "proj-name">Lounge 🛏️</a>
-                <p class = "proj-info">A New Way to Socialize with Friends and Coworkers. Users could create or join new teams. Being online and hanging out with other online friends. This APP could also suggest online-friendly game. Jitsi meeting link will be provided.</p>
+            <div class = "proj-text" aria-labelledby = "project2">
+                <a href="lounge/lounge.html" class = "proj-name" id="project2">Lounge 🛏️</a>
+                <p class = "proj-info" id="project2">A New Way to Socialize with Friends and Coworkers. Users could create or join new teams. Being online and hanging out with other online friends. This APP could also suggest online-friendly game. Jitsi meeting link will be provided.</p>
             </div>
         </div>
     </div>

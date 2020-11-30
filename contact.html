@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yunshu Zhang's Portfolio</title>
+    <title>Yunshu Zhang's Contact Info</title>
     <link rel="stylesheet" type="text/css" href="style.css"/>
     <link href = "https://fonts.googleapis.com/icon?family=Material+Icons"
       rel = "stylesheet">
@@ -12,19 +12,19 @@
     <!-- Header and Navigation bar -->
     <header>
         <!-- Section -->
-        <nav class="nav-bar">
-            <ul>
-                <li><a href="index.html" >Home</a></li>
-                <li><a href="project.html">Project</a></li>
-                <li><a href="about.html">About</a></li>
+        <nav class="nav-bar" aria-labelledby="header">
+            <ul role = "list">
+                <li role = "listitem"><a href="index.html" >Home</a></li>
+                <li role = "listitem"><a href="project.html">Project</a></li>
+                <li role = "listitem"><a href="about.html">About</a></li>
             </ul>
         </nav>
         <!-- Contact information -->
-        <a href="contact.html"><button>Contact</button></a>
+        <a  tabindex="0" href="contact.html"><button>Contact</button></a>
     </header>
     
     <!-- Address -->
-    <div class="contact-wrapper">
+    <div class="contact-wrapper" aria-labelledby="address">
         <img src="images/location_on.png" class="contact-art">
         <div class="contact-text">
             <h3>1930 Ridge Ave</h3>
@@ -32,7 +32,7 @@
         </div>
     </div>
     <!-- Email -->
-    <div class="contact-wrapper">
+    <div class="contact-wrapper" aria-labelledby="email">
         <img src="images/outline_mail.png" class="contact-art">
         <div class="contact-text">
             <h3>YunshuZhang2022@u.northestern.edu</h3>
@@ -40,7 +40,7 @@
         </div>
     </div>
     <!-- Phone -->
-    <div class="contact-wrapper">
+    <div class="contact-wrapper" aria-labelledby="phone">
         <img src="images/phone.png" class="contact-art">
         <div class="contact-text">
             <h3>832-800-6230</h3>
@@ -54,6 +54,53 @@
     <div class="google-calendar">
         <iframe src="https://calendar.google.com/calendar/embed?height=300&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FNew_York&amp;src=anlzemhhbmcyMDIwQGdtYWlsLmNvbQ&amp;src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;src=Yjk1bnFsdmpyNzExNG9sZDQ4ZDRsZmFsMWdAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=cGs3dG5zNHE1cjhwNmg3cmk2NDhjdTY0ZHNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=dTNubGg3OWI0OWJpajdwYzllcWFxNmNrNThAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=cmVnaXN0cmFyQHUubm9ydGh3ZXN0ZXJuLmVkdQ&amp;color=%23616161&amp;color=%23AD1457&amp;color=%23A79B8E&amp;color=%230B8043&amp;color=%23D50000&amp;color=%23E4C441" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
     </div>
-    
+
+    <!-- Form -->
+    <div class="title">
+        Leave me Message ✉️
+    </div>
+    <div>
+        <form onsubmit="submitForm(event)">
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" id="fname" name="name" required placeholder="John Doe">
+            </div>
+            <div>
+                <label for="email">Email (Formate: Yunshu@Zhang.com):</label>
+                <input type="email" name="email" id="email" required placeholder="John@Doe.com">
+            </div>
+            <div>
+                <label for="phone">Phone (Formate: 832-800-6230):</label>
+                <input type="tel" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required placeholder="832-800-6230">
+            </div>
+            <div>
+                <label for="age">Age (Optional):</label>
+                <input type="number" name="age" id="age" min="1" max="200" step="1" placeholder="20">
+            </div>
+            <div>
+                <label for="date">Today's Date (Optional):</label>
+                <input type="date" name="date" id="date" min="2020-12-02">
+            </div>
+            <div>
+                <label for="gender">Gender (Optional):</label>
+                <label for="male">Male</label>
+                <input type="radio" name="gender" id="male" value="male">
+                <label for="female">Female</label>
+                <input type="radio" name="gender" id="female" value="female">
+            </div>
+            <div>
+                <label for="message">Message:</label><br>
+                <textarea type="text" name="message" id="message" cols="70" rows="10" required></textarea>
+            </div>
+            <button>Submit</button>
+          </form> 
+    </div>
 </body>
+
+<script>
+    function submitForm(event) {
+        alert("Hi " + event.target.elements.name.value + ". Thank you for the message!");
+        return false;
+    }
+</script>
 </html>
